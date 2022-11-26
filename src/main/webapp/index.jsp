@@ -21,7 +21,7 @@
   position: absolute;
   z-index: 1;
   top: 45%;
-  left: 20%
+  left: 19.5%
 }
 
 li {

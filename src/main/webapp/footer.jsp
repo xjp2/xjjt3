@@ -17,7 +17,7 @@
 <body>
 
 <div class="footer">
-  <p>By YumBus</p>
+  <p>By YumBus </p>
 </div>
 
 </body>
