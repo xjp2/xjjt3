@@ -103,7 +103,7 @@ html {
   <p>Contact us if you have any enquiries. </p>
 </div>
 
-<h2 style="text-align:center">Our Way of communication</h2>
+<h2 style="text-align:center">Contact Us At</h2>
 <div class="row">
   <div class="column">
     <div class="card">
@@ -120,7 +120,7 @@ html {
       <img src="./image/phone.png" style="width:50%">
       <div class="container">
         <h2>PHONE NUMBER</h2>
-        <p>+65 63459854</p>
+        <p>+65 81831159</p>
       </div>
     </div>
   </div>
