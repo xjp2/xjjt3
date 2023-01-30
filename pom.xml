@@ -19,6 +19,7 @@
    <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
    <sonar.language>java</sonar.language>
    
+   
    <junit-jupiter.groupId>org.junit.jupiter</junit-jupiter.groupId>
    <junit-jupiter.artifactId>junit-jupiter</junit-jupiter.artifactId>
    <junit-jupiter.version>5.7.0</junit-jupiter.version>
@@ -37,7 +38,7 @@
  
   <build>
     <plugins>
-      <plugin>
+    <plugin>
       <groupId>${jacoco.groupId}</groupId>
         <artifactId>${jacoco.arifactId}</artifactId>
         <version>${jacoco.version}</version>
@@ -52,6 +53,13 @@
         		<goals><goal>report</goal></goals>
         	</execution>
         </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>17</release>
+        </configuration>
       </plugin>
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
