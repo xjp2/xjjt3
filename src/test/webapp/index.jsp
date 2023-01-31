@@ -43,7 +43,7 @@ li a:hover {
   background-color: #111;
 }
 </style>
-<title>Yumbuss</title>
+<title>Yumbus</title>
 </head>
 <body>
 <%@ include file="header.jsp" %>
