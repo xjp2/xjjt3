@@ -16,6 +16,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.sddevops.xjjt3.eclipse.data;
+
 /**
  * Servlet implementation class Yumbus
  */
@@ -28,7 +30,7 @@ public class Yumbus extends HttpServlet {
 		private String jdbcUsername = "root";
 		private String jdbcPassword = "password";
 		
-		private static final String Selectall = "select * from yumbus ";
+		private static final String Selectall = "select * from yumbus";
 		
 		//Step 3: Implement the getConnection method which facilitates connection to the database via
 		
@@ -98,7 +100,7 @@ public class Yumbus extends HttpServlet {
 	
     private void listDatas(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException, ServletException
     {
-    List <Yumbus> yumbusdata = new ArrayList <>();
+    List <data> yumbusdata = new ArrayList <>();
     try (Connection connection = getConnection();
     // Step 5.1: Create a statement using connection object
     PreparedStatement preparedStatement = connection.prepareStatement(Selectall);) {
