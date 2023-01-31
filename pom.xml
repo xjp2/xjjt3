@@ -10,7 +10,6 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-     <java.version>8</java.version>
     
     <!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
     <jacoco.groupId>org.jacoco</jacoco.groupId>
@@ -63,7 +62,7 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.1</version>
         <configuration>
-          <release>17</release>
+          <release>18</release>
         </configuration>
       </plugin>
       <plugin>
