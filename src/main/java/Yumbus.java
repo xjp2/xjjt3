@@ -23,7 +23,7 @@ public class Yumbus extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	//Step 1: Prepare list of variables used for database connections
-		private String jdbcURL = "jdbc:mysql://localhost:3306/userdetails";
+		private String jdbcURL = "jdbc:mysql://localhost:3306/yumbus";
 		private String jdbcUsername = "root";
 		private String jdbcPassword = "password";
 		
@@ -76,7 +76,7 @@ public class Yumbus extends HttpServlet {
 		case "/update":
 		break;
 		default:
-		listUsers(request, response);
+		listDatas(request, response);
 		break;
 		}
 		} catch (SQLException ex) {
@@ -93,8 +93,7 @@ public class Yumbus extends HttpServlet {
 		doGet(request, response);
 	}
 	
-	//Step 5: listUsers function to connect to the database and retrieve all users records
-    private void listUsers(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException, ServletException
+    private void listDatas(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException, ServletException
     {
     List <Yumbus> yumbusdata = new ArrayList <>();
     try (Connection connection = getConnection();
@@ -102,9 +101,8 @@ public class Yumbus extends HttpServlet {
     PreparedStatement preparedStatement = connection.prepareStatement(Selectall);) {
     // Step 5.2: Execute the query or update query
     ResultSet rs = preparedStatement.executeQuery();
-    // Step 5.4: Set the users list into the listUsers attribute to be pass to the
-    
-    request.setAttribute("listtitles", yumbusdata);
+  
+    request.setAttribute("listDatas", yumbusdata);
     request.getRequestDispatcher("/index.jsp").forward(request, response);
     }
     }
