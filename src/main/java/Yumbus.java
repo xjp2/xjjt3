@@ -1,5 +1,6 @@
 
 
+import java.io.Console;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -103,7 +104,7 @@ public class Yumbus extends HttpServlet {
     PreparedStatement preparedStatement = connection.prepareStatement(Selectall);) {
     // Step 5.2: Execute the query or update query
     ResultSet rs = preparedStatement.executeQuery();
-  
+    System.out.println(yumbusdata);
     request.setAttribute("listDatas", yumbusdata);
     request.getRequestDispatcher("/index.jsp").forward(request, response);
     }
