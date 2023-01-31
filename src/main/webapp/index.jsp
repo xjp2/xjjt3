@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <style>
 @charset "UTF-8";
 
@@ -48,7 +49,7 @@ li a:hover {
 <body>
 <%@ include file="header.jsp" %>
 <h1 id="heading1">YumBus</h1>
-<p value="${listtitles.title}" />
+<c:out value="${listtitles.title}" />
 <h2 id='heading2'>Where we find and review the finest food in the world.</h2>
 <img src="./image/food.jpg" style="position: absolute; opacity: 65%" height="100%" width="98.9%">
 <%@ include file="footer.jsp" %>
