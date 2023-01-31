@@ -5,6 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   
+  
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
@@ -36,6 +37,20 @@
     <artifactId>${junit-jupiter.artifactId}</artifactId>
     <version>${junit-jupiter.version}</version>
     <scope>test</scope>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+<groupId>mysql</groupId>
+<artifactId>mysql-connector-java</artifactId>
+<version>8.0.25</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/jstl/jstl -->
+<dependency>
+<groupId>jstl</groupId>
+<artifactId>jstl</artifactId>
+<version>1.2</version>
 </dependency>
 
  </dependencies>
