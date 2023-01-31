@@ -1,6 +1,13 @@
 package com.sddevops.xjjt3.eclipse;
 
 public class data {
+	
+	public data(String title, String titlesub) {
+		super();
+		this.title = title;
+		this.titlesub = titlesub;
+	}
+	
 	public String getTitle() {
 		return title;
 	}
