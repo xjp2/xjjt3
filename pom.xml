@@ -69,7 +69,7 @@
         <artifactId>maven-war-plugin</artifactId>
         <version>3.2.3</version>
       </plugin> 
-      <plugin>
+      <plugin> 
       <groupId>${jacoco.groupId}</groupId>
       <artifactId>${jacoco.artifactId}</artifactId>
       <version>${jacoco.version}</version>
