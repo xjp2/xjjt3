@@ -1,6 +1,6 @@
 package com.sddevops.xjjt3.eclipse;
 
-public class data {
+public class User {
 	protected String title;
 	protected String titlesub;
 	/**
@@ -27,11 +27,10 @@ public class data {
 	public void setTitlesub(String titlesub) {
 		this.titlesub = titlesub;
 	}
-	public data(String title, String titlesub) {
+	public User(String title, String titlesub) {
 		super();
 		this.title = title;
 		this.titlesub = titlesub;
 	}
-	
 	
 }

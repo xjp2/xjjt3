@@ -33,5 +33,4 @@ public class data {
 		this.titlesub = titlesub;
 	}
 	
-	
 }

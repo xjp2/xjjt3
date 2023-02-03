@@ -44,13 +44,12 @@ li a:hover {
   background-color: #111;
 }
 </style>
-<title>Yumbus</title>
+<title><c:out value="${listUsers[0].title}" /></title>
 </head>
 <body>
 <%@ include file="header.jsp" %>
-<h1 id="heading1">YumBus</h1>
-<c:forEach var="data" items="${listDatas}"><c:out value="${data.title}" /></c:forEach>
-<h2 id='heading2'>Where we find and review the finest food in the world.</h2>
+<h1 id="heading1"><c:out value="${listUsers[0].title}" /></h1>
+<h2 id='heading2'><c:out value="${listUsers[0].titlesub}" /></h2>
 <img src="./image/food.jpg" style="position: absolute; opacity: 65%" height="100%" width="98.9%">
 <%@ include file="footer.jsp" %>
 </body>
