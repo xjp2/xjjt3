@@ -24,7 +24,7 @@ class databasetest {
 	void testGetTitle() {
 		String value = data.getTitle();
 		assertEquals("yumbus", value);
-	}
+	} 
 
 	@Test
 	void testSetTitle() {
